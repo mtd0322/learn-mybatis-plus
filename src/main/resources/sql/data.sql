@@ -1,0 +1,2 @@
+INSERT INTO `t_sys_user` (`created_by` ,`created_date` ,`last_modified_by` ,`modified_date` ,`version` ,`mailbox`,`mobile` ,`name` ,`password` ,`salt_value`) VALUES
+ ('无', '2019-05-07 14:09:56', '无', '2019-05-07 14:09:56', 0, '1231ava@163.com', '15701589072', '123', 'ad4e11b9f2eec6572cf188258004fb58', 'f6bac32434724bd0a16bba42f67c8e61');

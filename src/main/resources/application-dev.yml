@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    validation-query: select 1
+    sql-script-encoding: UTF-8
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#    schema:
+#      - classpath:sql/department.sql
+#      - classpath:sql/employee.sql
+#      initialization-mode: ALWAYS
+
+    schema: classpath:sql/schema.sql
+    data: classpath:sql/data.sql
+    continue-on-error: true
+    initialization-mode: always
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    open-in-view: true
+#    properties:
+#      hibernate:
+#        enable_lazy_load_no_trans: true
+#    database: mysql
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+server:
+  port: 8081
+mybatis-plus:
+  mapper-locations: classpath:/mapper/testuser/*Mapper.xml
+  type-aliases-package: org.alan.learn.testuser.entity
